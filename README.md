@@ -1,10 +1,8 @@
-# ttk-billing
+# react-ts boilerplate
 
 ## Версия Node - v18.12.1
 
-## API схемы: https://api-core.ttk-fpc.ru/docs/#/%D0%91%D0%B8%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3/
-
-## Сборка production версии
+## Build
 ```
 yarn
 yarn build
@@ -16,22 +14,22 @@ yarn build
 yarn preview
 ```
 
-## Разработка
+## Develop mode
 ```
 yarn serve
 ```
 
-### Прибить процессы на 3000 и 8080 портах
+### Kill 3000 and 8080 ports processes
 ```
 yarn kill
 ```
 
-### Исправление ошибок линтера
+### Lint Fixes
 ```
 yarn lint
 ```
 
-### Проверка компиляции TS
+### Type checks
 ```
 yarn typecheck
 ```
