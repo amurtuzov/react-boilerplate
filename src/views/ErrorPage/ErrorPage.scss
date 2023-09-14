@@ -1,0 +1,35 @@
+.error {
+  @include centering;
+  height: 100%;
+  background: #E0E0E0;
+  &__wrapper {
+    background: $blue;
+    width: 820px;
+    padding: 64px 40px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: #4E525D;
+    font-size: 96px;
+    line-height: 1;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1;
+  }
+  &__controls {
+    width: 100%;
+    @include centering
+  }
+  &__navigate-back {
+    width: 220px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  &__navigate-main {
+    width: 220px;
+    height: 50px;
+  }
+}

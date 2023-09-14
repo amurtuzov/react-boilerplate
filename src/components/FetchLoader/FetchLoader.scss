@@ -1,0 +1,15 @@
+.fetch-loader {
+  &.big {
+    &.red {
+      @include loading($red, 50px, 50px);
+    }
+  }
+  &.medium {
+    &.red {
+      @include loading($red, 30px, 30px);
+    }
+    &.blue {
+      @include loading($blue, 30px, 30px);
+    }
+  }
+}
