@@ -7,6 +7,13 @@ import { adaptResponseForClient } from '@/helpers/adaptResponseForClient.ts'
 import { isEqual } from 'lodash'
 let abortController: AbortController | null = null
 
+// When you need to call the API based on an event (for example click), we use [externalCall = true] and pass the
+// parameters directly to the returned function (executeApiCall).
+//
+// If you need to call the API when loading the page, use [externalCall = false], the function accesses the API
+// with predefined parameters (params argument), the parameters must be initialized via useState in functional component,
+// during subsequent API call for example, when changing parameters (infinity scrolling), you need to change the parameters via setState.
+
 export default function useFetch<T, K, V>(
   apiCallFunction: (
     params?: V,
